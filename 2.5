@@ -1,0 +1,30 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+public class zadanie
+{
+    public static void main (String[] args)
+            throws IOException
+    {
+        double los_liczba = 0;
+        double zga_liczba = 0;
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        Random r = new Random();
+        los_liczba = Math.round(10*(r.nextDouble()));
+        zga_liczba = Double.parseDouble(br.readLine());
+
+        if (zga_liczba == los_liczba)
+        {
+            System.out.print("Gratulacje zgadłeś!");
+        }
+        else
+        {
+            System.out.print("Przegrana! Losowana liczba to:" + los_liczba);
+        }
+
+    }
+}
