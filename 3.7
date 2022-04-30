@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class z
+{
+    public  static void main (String[] args)
+            throws IOException
+    {
+        int a = 0;
+        int suma = 0;
+        int liczba = 0;
+
+        System.out.print("Podaj ile liczb ma zsumować program. ");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        liczba = Integer.parseInt(br.readLine());
+
+        for (a = 1; a <= liczba; a++)
+        {
+            suma += a;
+        }
+        System.out.print("Suma: " + suma);
+    }
+}
