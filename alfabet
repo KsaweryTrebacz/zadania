@@ -1,0 +1,39 @@
+public class g
+{
+    public static void main(String[] args)
+    {
+        //for
+        char znak;
+
+        for(znak = 'A'; znak <= 'Z'; znak++)
+        {
+            if (znak < 'Z')
+                System.out.print(znak + ",");
+            else
+                System.out.print(znak + ".");
+        }
+        System.out.println("");
+        for (znak = 'Z'; znak >= 'A'; znak--)
+        {
+            if (znak > 'A')
+                System.out.print(znak + ",");
+            else
+                System.out.println(znak + ".");
+        }
+        for(znak = 'a'; znak <= 'z'; znak++)
+        {
+            if (znak < 'z')
+                System.out.print(znak + ",");
+            else
+                System.out.print(znak + ".");
+        }
+        System.out.println("");
+        for (znak = 'z'; znak >= 'a'; znak--)
+        {
+            if (znak > 'a')
+                System.out.print(znak + ",");
+            else
+                System.out.println(znak + ".");
+        }
+    }
+}
