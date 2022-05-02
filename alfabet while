@@ -1,0 +1,50 @@
+public class zadanie
+{
+    public static void main(String[] args)
+    {
+        char duzyznak = 'A';
+        char malyznak = 'a';
+
+        while (duzyznak <= 'Z')
+        {
+            if (duzyznak < 'Z')
+                System.out.print(duzyznak + ",");
+            else
+                System.out.print(duzyznak + ".");
+            duzyznak++;
+        }
+
+        System.out.println(" ");
+
+        while (duzyznak >= 'A')
+        {
+            if (duzyznak < 'A')
+                System.out.print(duzyznak + ".");
+            else
+                System.out.print(duzyznak + ",");
+            duzyznak--;
+        }
+
+        System.out.println(" ");
+
+        while (malyznak <= 'z')
+        {
+            if (malyznak < 'z')
+                System.out.print(malyznak + ",");
+            else
+                System.out.print(malyznak + ".");
+            malyznak++;
+        }
+
+        System.out.println(" ");
+
+        while (malyznak >= 'a')
+        {
+            if (malyznak < 'a')
+                System.out.print(malyznak + ".");
+            else
+                System.out.print(malyznak + ",");
+            malyznak--;
+        }
+    }
+}
